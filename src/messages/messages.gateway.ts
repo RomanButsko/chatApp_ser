@@ -5,10 +5,8 @@ import { Socket } from 'socket.io';
 import { UsersService } from 'src/users/users.service';
 
 @WebSocketGateway(Number(process.env.PORT) || 8080, {
-    cors: {
+     cors: {
         origin: "*",
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-        allowedHeaders: "Content-Type, Authorization"
     },
     namespace: 'mail',
 })
