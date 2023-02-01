@@ -14,6 +14,6 @@ async function bootstrap() {
       'Origin,X-Requested-With,Content-Type,Accept,Authorization,authorization,X-Forwarded-for',
   });
 
-  await app.listen(1018);
+  await app.listen(1024);
 }
 bootstrap();
