@@ -4,7 +4,7 @@ import { MessageBody, SubscribeMessage, WebSocketGateway, WebSocketServer } from
 import { Socket } from 'socket.io';
 import { UsersService } from 'src/users/users.service';
 
-@WebSocketGateway(1024, {
+@WebSocketGateway(80, {
     cors: true,
     namespace: 'mail',
 })
