@@ -5,9 +5,8 @@ import { Socket } from 'socket.io';
 import { UsersService } from 'src/users/users.service';
 
 @WebSocketGateway(undefined, {
-     cors: {
-        origin: "*",
-    },
+    cors: '*:*',
+    transports: ['polling', 'websocket'],
     namespace: 'mail',
 })
 
