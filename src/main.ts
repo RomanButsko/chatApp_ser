@@ -11,7 +11,7 @@ async function bootstrap() {
     optionsSuccessStatus: 200,
     credentials: true,
     allowedHeaders:
-      'Origin,X-Requested-With,Content-Type,Accept,Authorization,authorization,X-Forwarded-for',
+      'Origin,X-Requested-With,Content-Type,Accept,Authorization,authorization,X-Forwarded-for, Access-Control-Allow-Credentials',
   });
 
   await app.listen(process.env.PORT || 1024);
