@@ -5,7 +5,7 @@ import { Socket } from 'socket.io';
 import { UsersService } from 'src/users/users.service';
 
 @WebSocketGateway(undefined, {
-    cors: { credentials: true, methods: ['GET', 'POST'], origin: ['https://chatappser-production.up.railway.app/mail', 'https://chatappser-production.up.railway.app/mail/socket.io']},
+    cors: { credentials: true, methods: ['GET', 'POST'], origin: ['https://chatappser-production.up.railway.app/mail', 'https://chatappser-production.up.railway.app/mail/socket.io', "https://chatappser-production.up.railway.app", "https://chat-anonymous.onrender.com"]},
     namespace: 'mail',
 })
 
