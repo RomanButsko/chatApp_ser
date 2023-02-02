@@ -4,7 +4,7 @@ import { MessageBody, SubscribeMessage, WebSocketGateway, WebSocketServer } from
 import { Socket } from 'socket.io';
 import { UsersService } from 'src/users/users.service';
 
-@WebSocketGateway({ cors: '*'})
+@WebSocketGateway({ cors: '*', namespace: 'mail'})
 
 export class ChatGateway {
     constructor(private messageService: MessagesService,
