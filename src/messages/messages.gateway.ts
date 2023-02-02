@@ -6,7 +6,7 @@ import { UsersService } from 'src/users/users.service';
 
 @WebSocketGateway(undefined, {
     cors: { credentials: true, methods: ['GET', 'POST'], origin: ['https://chatappser-production.up.railway.app/mail', 'https://chatappser-production.up.railway.app/mail/socket.io']},
-    transports: ['polling', 'websocket'],
+    namespace: 'mail',
 })
 
 export class ChatGateway {
